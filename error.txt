@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "generador.py", line 41, in ejecuta_toma_dato
+    for item in x:
+  File "generador.py", line 19, in toma_dato
+    for item in var_iterable:
+  File "generador.py", line 30, in distinct
+    if item in seen:
+TypeError: unhashable type: 'list'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "generador.py", line 52, in <module>
+    ejecuta_toma_dato()
+  File "generador.py", line 44, in ejecuta_toma_dato
+    print(e, file = error.txt)
+NameError: name 'error' is not defined

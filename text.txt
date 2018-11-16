@@ -1,0 +1,9 @@
+Class names should normally use the CapWords convention.
+
+The naming convention for functions may be used instead in 
+cases where the interface is documented and used primarily as a callable.
+
+Note that there is a separate convention for builtin names: 
+most builtin names are single words 
+(or two words run together), with the CapWords 
+convention used only for exception names and builtin constants.
