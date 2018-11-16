@@ -1,0 +1,29 @@
+l = [1, 4, 2, 1, 7, 9, 9]
+s = set(l)
+s.remove(1)
+s
+s.discard(98)
+s
+s.remove(98)
+j = s.copy()
+j
+id(j) == id(s)
+# set no soporta indexacion 
+id(j[1]) == id(s[1]) 
+ojos_negros = {'Andres', 'Juan', 'Maria', 'Pedro'}
+ojos_verdes = {'Diana', 'Paulina'}
+cabello_negro = {'Andres', 'Juan', 'Paulina'}
+cabello_cafe = {'Maria','Diana'}
+sangre_tipo_a = {'Maria', 'Andres', 'Diana'}
+sangre_tipo_b = {'Juan', 'Paulina'}
+sangre_tipo_o = {'Pedro'}
+# ojos negros + cabello negro
+ojos_negros.union(cabello_negro)
+# ojos negros y cabello negro
+ojos_negros.intersection(cabello_negro)
+# ojose verdes que no tengan sagre tipo a
+ojos_verdes.difference(sangre_tipo_a)
+ojos_verdes.symmetric_difference(sangre_tipo_a)
+cabello_negro.issubset(ojos_negros)
+sangre_tipo_o.issubset(ojos_negros)
+

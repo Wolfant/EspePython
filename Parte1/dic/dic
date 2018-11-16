@@ -1,0 +1,41 @@
+urls = {"Pluralsigth": "https://pluralsight.com",
+       "Sixty North": "http://sixty-north.com",
+       "Google": "http://google.com",
+       "Microsoft": "https://www.microsoft.com"}
+
+urls['Google']
+name_and_ages = [('Alice', 32), ('Bob', 38), ('Charlie', 20)]
+d = dict(name_and_ages)
+d
+greek_alpha = dict(a='alfa', b = 'beta', c = 'gama')
+g = dict(d='delta')
+greek_alpha.update(g)
+greek_alpha
+g = dict(d='epsilon')
+greek_alpha.update(g)
+greek_alpha
+
+# Iteracion
+for key,value in greek_alpha.items():
+    print("{key} => {value}".format(key=key, value=value))
+
+# Membership
+
+'beta' in greek_alpha
+'b' in greek_alpha
+'gama' not in greek_alpha
+
+del greek_alpha['d']
+greek_alpha
+
+greek_alpha['c'] += 'GAMA'
+greek_alpha
+
+# llenar todas las letras griegas e imprimir
+
+from pprint import pprint as pp
+pp(greek_alpha)
+
+
+
+
